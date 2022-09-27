@@ -20,6 +20,10 @@
 	
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/style.css">
+
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+	<script src="js/email-config.js"></script>
+	
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 	
@@ -58,7 +62,7 @@
 							<div class="text">
 								<span class="subheading">Freelance Web Designer &amp; Developer</span>
 								<h1 class="mb-4 mt-3">Get Cool Site In <span>Wordpress</span></h1>
-								<p><a href="#" class="btn btn-primary">Hire me</a> <a href="#" class="btn btn-primary btn-outline-primary">Download CV</a></p>
+								<p><a href="#contact-section" class="btn btn-primary">Hire me</a> <a href="#" class="btn btn-primary btn-outline-primary">Download CV</a></p>
 							</div>
 						</div>
 					</div>
@@ -514,17 +518,15 @@
 					    <ul>
 					      <li class="active"><a href="javascript:void(0);" data-filter="*">All</a></li>
 					      <li><a href="javascript:void(0);" data-filter="ecommerce">E-Commerce (SHOP)</a></li>
-					      <li><a href="javascript:void(0);" data-filter="realestate">Real Estate</a></li>
-					      <li><a href="javascript:void(0);" data-filter="health">Health</a></li>  
-					      <li><a href="javascript:void(0);" data-filter="sports">Sports</a></li>
-					      <li><a href="javascript:void(0);" data-filter="education">Education</a></li>
-					      <li><a href="javascript:void(0);" data-filter="entertainment">Entertainment</a></li>
 					      <li><a href="javascript:void(0);" data-filter="elementor">Elementor</a></li>
+						  <li><a href="javascript:void(0);" data-filter="wpbakery">WP Bakery</a></li>
+					      <li><a href="javascript:void(0);" data-filter="estate">Real Estate</a></li>
+						  <li><a href="javascript:void(0);" data-filter="portfolio">Portfolio</a></li>
 					      <li><a href="javascript:void(0);" data-filter="divi">Divi</a></li>
-					      <li><a href="javascript:void(0);" data-filter="wpbakery">WP Bakery</a></li>
-					      <li><a href="javascript:void(0);" data-filter="avada">Avada</a></li>
+					      <li><a href="javascript:void(0);" data-filter="beaver">Beaver Builder </a></li>
+						  <li><a href="javascript:void(0);" data-filter="figmapsd">Figma/PSD to WordPress</a></li>
+						  <li><a href="javascript:void(0);" data-filter="custom">Custom</a></li>
 					      <li><a href="javascript:void(0);" data-filter="onpage">One Page</a></li>
-					      <li><a href="javascript:void(0);" data-filter="other">Other</a></li>
 					    </ul>
 					</div>
 					<div id="container" class="isotope">
@@ -555,7 +557,6 @@
 					      	</div>
 					      </div>
 					    </div>
-
 						
 					    <div class="grid-item bg-image" data-filter="elementor" style="background-image:url('portfolio/img/Courant_elementor.png');">
 							<div class="overlay">
@@ -598,6 +599,169 @@
 								<div class="overlay-content">
 									<div>The Century Idea</div>
 									<a href="https://www.thecenturyidea.com/" class="btn btn-primary"><span class="fa fa-tv"></span> Visit Web</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="grid-item bg-image" data-filter="custom" style="background-image:url('portfolio/img/barugzai-custom.webp');">
+							<div class="overlay">
+								<div class="overlay-content">
+									<div>Barugzai</div>
+									<a href="https://barugzai.com/" class="btn btn-primary"><span class="fa fa-tv"></span> Visit Web</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="grid-item bg-image" data-filter="estate" style="background-image:url('portfolio/img/ukpaisa_estate.webp');">
+							<div class="overlay">
+								<div class="overlay-content">
+									<div>UK Pasia Realty</div>
+									<a href="https://ukpasiarealty.com/" class="btn btn-primary"><span class="fa fa-tv"></span> Visit Web</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="grid-item bg-image" data-filter="figmapsd" style="background-image:url('portfolio/img/star_mobile_figmpsd.webp');">
+							<div class="overlay">
+								<div class="overlay-content">
+									<div>star Mobile News </div>
+									<a href="https://starnewsmobile.com/" class="btn btn-primary"><span class="fa fa-tv"></span> Visit Web</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="grid-item bg-image" data-filter="custom" style="background-image:url('portfolio/img/gopro_construction_custom.webp');">
+							<div class="overlay">
+								<div class="overlay-content">
+									<div>Go Pro Construction</div>
+									<a href="https://goproconstruction.us/" class="btn btn-primary"><span class="fa fa-tv"></span> Visit Web</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="grid-item bg-image" data-filter="portfolio" style="background-image:url('portfolio/img/sade_adarg_portfolio.webp');">
+							<div class="overlay">
+								<div class="overlay-content">
+									<div>Sade Agard</div>
+									<a href="https://react-portfolio-gules-eight.vercel.app/" class="btn btn-primary"><span class="fa fa-tv"></span> Visit Web</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="grid-item bg-image" data-filter="wpbakery" style="background-image:url('portfolio/img/plumbing_services_wpbakery.png');">
+							<div class="overlay">
+								<div class="overlay-content">
+									<div>Pure Water Pipe </div>
+									<a href="https://plumbingservices-la.com/" class="btn btn-primary"><span class="fa fa-tv"></span> Visit Web</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="grid-item bg-image" data-filter="wpbakery" style="background-image:url('portfolio/img/AAA_pluming_wpbakery.png');">
+							<div class="overlay">
+								<div class="overlay-content">
+									<div>AAA Pluming Alhambra</div>
+									<a href="https://plumbing-alhambra.com/" class="btn btn-primary"><span class="fa fa-tv"></span> Visit Web</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="grid-item bg-image" data-filter="wpbakery" style="background-image:url('portfolio/img/Handyman_northridge_wpbakery.png');">
+							<div class="overlay">
+								<div class="overlay-content">
+									<div>Handyman Northridge</div>
+									<a href="https://handymannorthridge.com/" class="btn btn-primary"><span class="fa fa-tv"></span> Visit Web</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="grid-item bg-image" data-filter="wpbakery" style="background-image:url('portfolio/img/elita_handyman_wpbakery.png');">
+							<div class="overlay">
+								<div class="overlay-content">
+									<div>Elita Handyman Service</div>
+									<a href="https://handymanculvercity.com/" class="btn btn-primary"><span class="fa fa-tv"></span> Visit Web</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="grid-item bg-image" data-filter="wpbakery" style="background-image:url('portfolio/img/firstclass_handyman_wpbakery.png');">
+							<div class="overlay">
+								<div class="overlay-content">
+									<div>FirstClass Handyman Service</div>
+									<a href="https://handymanagourahills.com/" class="btn btn-primary"><span class="fa fa-tv"></span> Visit Web</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="grid-item bg-image" data-filter="wpbakery" style="background-image:url('portfolio/img/prohand_appliance_wpbakery.png');">
+							<div class="overlay">
+								<div class="overlay-content">
+									<div>Prohand Appliance Repair</div>
+									<a href="https://appliancerepair-oxnard.com/" class="btn btn-primary"><span class="fa fa-tv"></span> Visit Web</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="grid-item bg-image" data-filter="beaver" style="background-image:url('portfolio/img/gocloud_beaver.png');">
+							<div class="overlay">
+								<div class="overlay-content">
+									<div>Go Cloud</div>
+									<a href="gocloud.ie" class="btn btn-primary"><span class="fa fa-tv"></span> Visit Web</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="grid-item bg-image" data-filter="ecommerce" style="background-image:url('portfolio/img/qikpedi_step_ecommerce.png');">
+							<div class="overlay">
+								<div class="overlay-content">
+									<div>Qikpedi Step</div>
+									<a href="https://qpedistep.com/" class="btn btn-primary"><span class="fa fa-tv"></span> Visit Web</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="grid-item bg-image" data-filter="ecommerce" style="background-image:url('portfolio/img/scented_cards_ecommerce.png');">
+							<div class="overlay">
+								<div class="overlay-content">
+									<div>Scented Cards</div>
+									<a href="https://scentedcards.co.uk/" class="btn btn-primary"><span class="fa fa-tv"></span> Visit Web</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="grid-item bg-image" data-filter="ecommerce" style="background-image:url('portfolio/img/get_my_supps_ecommerce.png');">
+							<div class="overlay">
+								<div class="overlay-content">
+									<div>Get My Supps</div>
+									<a href="https://getmysupps.com/" class="btn btn-primary"><span class="fa fa-tv"></span> Visit Web</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="grid-item bg-image" data-filter="ecommerce" style="background-image:url('portfolio/img/bda_sprit_ecommerce.png');">
+							<div class="overlay">
+								<div class="overlay-content">
+									<div>BDA Spirits </div>
+									<a href="https://bdaspirits.bm/" class="btn btn-primary"><span class="fa fa-tv"></span> Visit Web</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="grid-item bg-image" data-filter="onpage" style="background-image:url('portfolio/img/FXNL_onepage.png');">
+							<div class="overlay">
+								<div class="overlay-content">
+									<div>FXNL Trading</div>
+									<a href="https://forexfxnl.com/" class="btn btn-primary"><span class="fa fa-tv"></span> Visit Web</a>
+								</div>
+							</div>
+						</div>
+
+						
+						<div class="grid-item bg-image" data-filter="estate" style="background-image:url('portfolio/img/north_cyprus_retreat_realestate.png');">
+							<div class="overlay">
+								<div class="overlay-content">
+									<div>North Cyprus Retreat</div>
+									<a href="https://northcyprusretreats.com/" class="btn btn-primary"><span class="fa fa-tv"></span> Visit Web</a>
 								</div>
 							</div>
 						</div>
@@ -766,7 +930,7 @@
 
 			<div class="row block-9">
 				<div class="col-md-8">
-					<form action="#" class="bg-light p-4 p-md-5 contact-form">
+					<form method="post" class="bg-light p-4 p-md-5 contact-form">
 						<div class="row">
 							<div class="col-md-6">
 								<div class="form-group">
@@ -790,7 +954,7 @@
 							</div>
 							<div class="col-md-12">
 								<div class="form-group">
-									<input type="submit" value="Submit Now" class="btn btn-primary py-3 px-5">
+									<input type="submit" value="Submit Now" class="btn btn-primary py-3 px-5" onclick="sendEmail()">
 								</div>
 							</div>
 						</div>
@@ -829,7 +993,7 @@
 								<span class="fa fa-globe"></span>
 							</div>
 							<div class="text">
-								<p><span>Website</span> <a href="#">yoursite.com</a></p>
+								<p><span>Website</span> <a href="https://asaadqamar.github.io/">asaadqamar.github.io</a></p>
 							</div>
 						</div>
 					</div>
@@ -848,8 +1012,8 @@
 						<p>Write me about your project idea or query on mentioned platform and I'll get back to you at my earliest convenience. </p>
 						<p>
 							<a href="https://wa.me/923403786623?text=Hi%20Asaad,%20I'm%20(name)%20from%20(country).%20I%20have%20a%20task/project%20which%20I%20want%20to%20discuss." class="btn btn-primary">Whatsapp</a>
-							<a href="#contact-section" class="btn btn-primary">Fiverr</a>
-							<a href="#contact-section" class="btn btn-primary">Upwork</a>
+							<a href="https://www.fiverr.com/qamardevelopers" class="btn btn-primary">Fiverr</a>
+							<a href="https://www.upwork.com/freelancers/~01c9706fafab555a84" class="btn btn-primary">Upwork</a>
 						</p>
 					</div>
 				</div>
@@ -888,9 +1052,10 @@
 							</ul>
 						</div>
 						<ul class="ftco-footer-social list-unstyled mt-2">
-							<li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
-							<li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
-							<li class="ftco-animate"><a href="#"><span class="fa fa-github"></span></a></li>
+							<li class="ftco-animate"><a href="https://www.facebook.com/M.Asaad.Qamar/"><span class="fa fa-facebook"></span></a></li>
+							<li class="ftco-animate"><a href="https://www.instagram.com/asaad_qamar55/"><span class="fa fa-instagram"></span></a></li>
+							<li class="ftco-animate"><a href="https://github.com/asaadqamar"><span class="fa fa-github"></span></a></li>
+							<li class="ftco-animate"><a href="https://github.com/asaadqamar"><span class="fa fa-linkedin"></span></a></li>
 						</ul>
 					</div>
 				</div>
